@@ -3,7 +3,7 @@
 
 
 <h2>Quem Somos ?</h2>
-<p>Olá, somos a Viti Wine, uma consultoria que desenvolve soluções voltadas para o agronegócio</p>
+<p>Olá, somos a Viti Wine, uma consultoria que desenvolve soluções voltadas para o agronegócio.</p>
 
 
 <h2>Missão</h2>
