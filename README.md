@@ -10,6 +10,6 @@
 <p>Visando economia, lucro e satisfação de nossos cleintes, sempre engajados e no foco com a melhores soluções do mercado.</p>
 </br>
 
-<h2>Quais são os valores ?</h2>
+<h2>Quais são os nossos valores ?</h2>
 <p>Honestidade, transparência, parceiria e confiança de ambas partes de um projeto !</p>
 </br>
