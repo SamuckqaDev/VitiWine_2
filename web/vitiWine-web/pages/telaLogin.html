@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/script.jss"></script>
   </head>
   <body>
     <div class="div_roxo">
@@ -20,17 +21,10 @@
         ><input id="ipt_email" placeholder="E-mail" />
         <span class="sp_senha">Senha:</span
         ><input id="ipt_senha" placeholder="Senha" type="password" /><br />
-        <button onclick="entrar()" class="btn_entrar">Entrar</button>
+        <p onclick="esqueceu()" class="p_senha">Esqueceu sua senha?</p>
+        <button onclick="entrar()" class="btn_entrar">Entrar</button><br>
+        
       </div>
     </div>
   </body>
 </html>
-<script>
-  function entrar() {
-    if (ipt_email.value == "gui@hotmail.com" && ipt_senha.value == "1234") {
-      window.open("http://www.google.com.br", "_blank");
-    } else {
-      alert("Senha ou usuário incorreto!");
-    }
-  }
-</script>
