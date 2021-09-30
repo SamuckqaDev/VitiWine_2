@@ -28,7 +28,7 @@ nav{
     
 }
 .divbanner{
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0, 0, 0, 0.253)), url("imagens/fundo.jpg") no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0, 0, 0, 0.253)), url("./img/fundo.jpg") no-repeat center center;
     background-size: cover;
     height: 70vh;
     width: 100vw;
