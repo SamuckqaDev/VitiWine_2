@@ -1,0 +1,74 @@
+.div_roxo {
+  background-color: #b057a69a;
+  width: 40%;
+  height: 100vh;
+  float: right;
+}
+.div_roxo > img {
+  position: absolute;
+  height: 200px;
+  margin-left: 20px;
+}
+.div_branco {
+  background-color: white;
+  width: 60%;
+  height: 50vh;
+  border-radius: 8px;
+  margin: 140px auto;
+  box-shadow: 3px 3px 10px black;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.253)),
+    url(https://minhasaude.proteste.org.br/wp-content/uploads/2020/10/uva-970x472.jpg)
+      no-repeat center center fixed;
+  background-size: cover;
+}
+#ipt_email {
+  margin: 30px auto 0 20px;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  border: 2px solid #b057a6;
+}
+#ipt_senha {
+  margin: 30px auto 0 20px;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  border: 2px solid #b057a6;
+}
+.sp_email {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: #9b108bb7;
+  margin: 0 0 0 10px;
+}
+.sp_senha {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: #9b108bb7;
+  margin: 0 0 0 10px;
+}
+.btn_entrar {
+  margin: 35px auto;
+  margin-left: 40px;
+  border-radius: 8px;
+  height: 40px;
+  width: 200px;
+  background-color: #9b108bb7;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 100%;
+  border: none;
+}
+.btn_entrar:hover {
+  color: #b057a6;
+  background-color: #fff;
+  border: 2px solid #b057a6;
+  transition: 0.2s;
+}
+
+.alterar_img {
+  margin: -40px;
+}

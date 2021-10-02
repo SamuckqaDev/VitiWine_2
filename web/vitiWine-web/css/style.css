@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto slab', sans-serif;
+}
+body{
+    background-color: #e5e5e5;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background: #821F7B;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0.9;
+    font-size: 20px;
+    
+}
+.divbanner{
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0, 0, 0, 0.253)), url("./img/fundo.jpg") no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+}
+
+.navbar{
+    margin-left: 400px;
+    width: 85%;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;  
+    background: #ca7dc6;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.login{
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 100px;
+    cursor: pointer;
+    border-color: #8e44ad;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+.login:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  .login:hover {
+    color: rgb(170, 0, 128);
+  }
+  .login:hover:after {
+    width: 110%;
+  }
+  button{
+    border-radius: 8px;
+    height: 50px;
+    width: 120px;
+    background-color: rgba(255, 195, 232, 0.349);
+    border: none;
+    box-shadow:0px 0px 1px black;
+    cursor: pointer;
+  }
+  .linhalogo{
+      height: 50px;
+      width: 3px;
+      background-color: white;
+      margin-left: 10px;
+      color: white;
+  }
+  .logoviti{
+    font-size: 10px;
+    margin-left: 10px;
+    width: 150px;
+  }
+
+
+.logo{
+    margin-left: 150px;
+}
+.div1{
+    border-radius: 8px;
+    height: 250px;
+    width: 450px;
+    background-color: #B057A6;
+    margin-top: -100px;
+    margin-left: 510px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.vitiwine{
+    
+    font-size: 30px;
+    margin-left: 170px;
+}
+p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.img2{
+    width: 400px;
+    height: 380px;
+    margin-left: 50px;
+    text-align: center;
+    float: left;
+    box-shadow: 10px 11px 10px rgba(0, 0, 0, 0.459);
+}
+.divlinha1{
+    background-color: #B057A6;
+    height: 3px;
+    width: 350px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+.divlinha2{
+    background-color: #B057A6;
+    height: 180px;
+    width: 4px;
+    margin-left: 900px;
+    margin-top: 0px;
+}
+.divlinha3{
+    background-color: #B057A6;
+    height: 3px;
+    width: 350px;
+    margin-left: 950px;
+    margin-top: -5px;
+}
+.missao{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.missao2{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    
+    
+}
+.valores{
+    font-size: 30px;
+    margin-left: 180px;
+}
+.teste{
+    width: 400px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-left: 23px;
+    text-align: center;
+}
+.divbanner2{
+    background-color: #B057A6;
+    height: 500px;
+    width: 100vw;
+}
+.produto{
+    font-size: 30px;
+    margin-top: 250px;
+}
+.sensor{
+    position: absolute;
+width: 459px;
+height: 76px;
+left: 520px;
+top: 1030px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+.produto{
+position: absolute;
+width: 1198px;
+height: 132px;
+left: 180px;
+top: 900px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+
+color: #FFFFFF;
+}
+.texto{
+    position: absolute;
+width: 425px;
+height: 114px;
+left: 850px;
+top: 1100px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+
+color: #FFFFFF;
+}
+.arduino{
+    position: absolute;
+width: 236px;
+height: 132px;
+left: 550px;
+top: 1100px;
+}
+.img3{
+    margin-left: 865px;
+    margin-top: -100px;
+}
+.boximg3{
+    box-shadow: 10px 11px 10px rgba(0, 0, 0, 0.459);
+
+}
+.text2{
+    margin-top: -180px;
+    margin-left: 170px;
+    width: 400px;
+    text-align: center;
+}
+.linhafinal{
+    background-color: purple;
+    height: 3px;
+    width: 350px;
+    margin-top: 40px;
+    margin-left: 190px;
+}
+.divfinal{
+    background-color: #b87cb0;
+    width: 100vw;
+    height: 500px;
+    font-size: 40px;
+    box-shadow: 0px 5px 10px black;
+}
+.parcerias{
+    margin-left: 620px;
+}
+.divimgs{
+    margin-left: 200px;
+}
+.parceriasimg{
+    width:200px;
+    height:150px;
+    background:#676470;
+    transition:all 0.3s ease;
+    box-shadow: 2px 2px 5px black;
+}
+.parceriasimg:hover{
+        transform: scale(1.2);
+}
+.divrod{
+    width: 100vw;
+    height: 50px;
+}
+.rodape{
+    width: 100vw;
+    height: 300px;
+    background-color: purple;
+    color: white;
+}
+.textorodape{
+    margin-left: 150px;
+}
+.redes{
+    margin-top: -140px;
+    margin-left: 900px;
+    letter-spacing: 30px;
+}
+.rodi{
+    transition:all 0.3s ease;
+}
+.rodi:hover{
+    transform: scale(1.2);
+}
+.iconesredes{
+    letter-spacing: 0px;
+    font-size: 30px;
+    margin-left: 120px;
+}
+

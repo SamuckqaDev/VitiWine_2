@@ -3,8 +3,9 @@ function Calcular() {
   var result1 = ipt_calculo * 0.1;
   var result = Number(result1 + ipt_calculo);
 
-  div_calc.innerHTML += `Seu lucro atual é de <b> R$ ${ipt_calculo.toFixed(2)}</b>Após aquisição dos nossos serviços seus lucros passam  ser de<b> R$ ${result.toFixed(2)}</b> <br> `;
+  div_calc.innerHTML += `Seu lucro atual é de <b> R$ ${ipt_calculo.toFixed(2)}</b>Após aquisição dos nossos serviços seus lucros passam  ser de<b> R$ ${result.toFixed(2)}</b> <br><br> `;
 
+  div_some.style.display = 'none'
 }
 
 function italia() {
@@ -14,7 +15,7 @@ function italia() {
 
   var total = faturar + result
 
-  div_calc.innerHTML += `Seu lucro na uva <b>Italía</b> será de <b> R$ ${total.toFixed(2)}</b> <br> `;
+  div_calc.innerHTML += `Seu lucro na uva <b>Italía</b> será de <b> R$ ${total.toFixed(2)}</b> <br><br> `;
 }
 
 function thompson() {
@@ -24,7 +25,7 @@ function thompson() {
   
   var total = faturar + result
 
-  div_calc.innerHTML += `Seu lucro na uva <b>Thompson</b> será de <b> R$ ${total.toFixed(2)}</b> <br> `;
+  div_calc.innerHTML += `Seu lucro na uva <b>Thompson</b> será de <b> R$ ${total.toFixed(2)}</b> <br><br> `;
 }
 
 function crimson() {
@@ -34,7 +35,7 @@ function crimson() {
 
   var total = faturar + result
 
-  div_calc.innerHTML += `Seu lucro na uva <b>Crismson</b> será de <b>R$ ${total.toFixed(2)} </b><br>`;
+  div_calc.innerHTML += `Seu lucro na uva <b>Crismson</b> será de <b>R$ ${total.toFixed(2)} </b><br><br>`;
 }
 
 function malbec() {
@@ -45,7 +46,7 @@ function malbec() {
   
   var total = faturar + result
 
-  div_calc.innerHTML += `Seu lucro da uva <b>Malbec</b> será de <b>R$ ${total.toFixed(2)}</b> <br>`;
+  div_calc.innerHTML += `Seu lucro da uva <b>Malbec</b> será de <b>R$ ${total.toFixed(2)}</b> <br><br>`;
 }
 
 function merlot() {
@@ -56,7 +57,7 @@ function merlot() {
   
   var total = faturar + result
 
-  div_calc.innerHTML += `Seu lucro  da uva <b>Merlot</b> será de <b> R$ ${total.toFixed(2)}</b> <br> `;
+  div_calc.innerHTML += `Seu lucro  da uva <b>Merlot</b> será de <b> R$ ${total.toFixed(2)}</b> <br><br> `;
 }
 
 
