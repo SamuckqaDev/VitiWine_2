@@ -8,49 +8,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VitiWine</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    
+    
 </head>
 <body>
     <header>
         <nav>
-            <a class="logo" href="a"><img src="./img/logo.png" width="50px"></a>
+            <a class="logo" href="a"><img src="img/logo.png" width="50px"></a>
             <div class="linhalogo">
             <div class="logoviti"> <b style="font-size: 30px;"> Vitiwine</b> <br> "Soluções agropecuárias"</div>
             </div>
 
-            <div class="navbar">
+            <div class="container">
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="a">Sobre</a></li>
-                    <li><a href="a">Serviços</a></li>
-                    <li><a href="a">Nosso time</a></li>
-                    <li><a href="a">Contato</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#produto">Produto</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#parceria">Parceiros</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="">Simulador</a></li>
                 </ul>
             </div>
             <div>
-                <button class="login">
-                    <a href="./telaLogin.html">Entrar</a>
-                </button>
+                <button class="login">Entrar</button>
             </div>
         </nav>
     </header>
 
     <div class="divbanner"></div>
-    <div class="div1"><br><br><br>
+    <div class="div1"><br>
                         
-        <a class="vitiwine">VitiWine</a> <br><br>
-        <p>Texto aleatorio que devmos colocar nessa parte, não faço ideia. Salve o Corinthians
-            O campeão dos campeões Eternamente Dentro dos nosso corações
+        <div class="vitiwine"> <b style="font-size: 50px;">Vitiwine</b> <br> &nbsp;&nbsp;&nbsp; "Soluções agropecuárias"</div>
+        <br><br>
+        <p>"Uma empresa com foco de soluções agropecuárias" <br> <br> "Onde o cliente tem voz ativa, pois a transparêcia é um dos nossos maiores valores"
         </p>
-        </div> <br><br><br> <br>
+        </div> <br><br><br> <br> <br><br><br><br>
 
     <div class="div2">
-        <img class="img2" src="img/img2.jpg">
+        <img class="img2" src="./img/img2.jpg">
     </div> 
     <div class="divlinha1"> <br>
             
         <div style="text-align: center;">
-            <span class="missao">Missao</span> <br><br>
+            <span id="produto" class="missao">Missao</span> <br><br>
             <span class="missao2">
                 Visando economia, lucro e satisfação de nossos clientes, sempre br
                 executar nosso serviços com excelência, engajados e no foco com a
@@ -61,7 +63,7 @@
     </div>
     <div class="divlinha2"><br>
         <span class="valores">Valores</span> <br><br>
-        <div class="teste">
+        <div class="textovalores">
             Honestidade, transparência, parceira e confiança! <br>
             Juntos com o mesmo foco, objetivo e motivação, incentivamos a
             empatia, pois para seu problema, existe a nossa solução !
@@ -72,21 +74,27 @@
     </div> <br><br>
 
     <div class="divbanner2">
+        <div style="width: 1px; height: 1px;"></div>
 
-
-        <div class="sensor">Sensor de temperatura de umidade</div>
-        <div class="produto">Nosso produto:</div>
-        <div class="arduino"><img src="./img/arduino.png" width="300px"></div>
-        <div class="texto">que será aplicado dentro das estufas, coletando dados e gerando os graficos</div>
+        <div class="sensor">Sensor de temperatura e umidade <br>
+             <span style="font-size: 13px;">
+             Sensores responsaveis pela captação de temperatura são implados
+            diretamente dentro das estufas. Assim, com as informações obtidas através dos equipamentos, 
+            nossa equipe disponibilizará todo o tipo de informação 
+            necessaria para uma melhor gestão na plantação de uva.</span>
+        </div>
+        <div class="produto" id="sobre">Nosso produto:</div>
+        <div class="arduino"><img src="img/arduino.png" width="150px"><img src="img/lm35.png" width="150px"></div>
 
 
     </div>
-    <div class="img3"><img id="boximg3" width="500px" src="./img/img3.jpg"></div>
+    <div class="img3"><img class="boximg3" width="500px" src="img/img3.jpg"></div>
     <div class="text2"> <br><br>
-        <h3>Sobre:</h3>
-        
-        Algo explicatico sobre as estufas, onde sera aplicado o arduino! Visando economia, lucro e satisfação de nossos clientes,
-         sempre br executar nosso serviços com excelência, engajados e no foco com a melhores soluções do mercado.</div>
+
+        <h2>Sobre</h2> <br>
+        A empresa com as melhores soluções do mercado voltadas para área agropecuária, a VitiWine em parceiria com você tem como foco
+         total satisfação do cliente, visando credibilidade e crescimento no mercado agropecuário</div>
+         <span id="parceria"></span>
     <div class="linhafinal"></div> <br><br>
     <div class="divfinal">
         
@@ -95,16 +103,16 @@
         <div class="parcerias"> Parcerias</div> <br>
 
         <div class="divimgs">
-        <img class="parceriasimg" src="./img/parc3.png" width="200px">
-        <img class="parceriasimg" src="./img/parc4.jpg" width="200px">
-        <img class="parceriasimg" src="./img/parc4.jpg" width="200px">
-        <img class="parceriasimg" src="./img/parc3.png" width="200px">
-        <img class="parceriasimg" src="./img/parc5.jpg" width="200px"> <br>
-        <img class="parceriasimg" src="./img/parc1.png" width="200px">
-        <img class="parceriasimg" src="./img/parc6.png" width="200px">
-        <img class="parceriasimg" src="./img/parc2.png" width="200px">
-        <img class="parceriasimg" src="./img/parc6.png" width="200px">
-        <img class="parceriasimg" src="./img/parc1.png" width="200px">
+        <img class="parceriasimg" src="img/parc3.png" width="200px">
+        <img class="parceriasimg" src="img/parc4.jpg" width="200px">
+        <img class="parceriasimg" src="img/parc4.jpg" width="200px">
+        <img class="parceriasimg" src="img/parc3.png" width="200px">
+        <img class="parceriasimg" src="img/parc5.jpg" width="200px"> <br>
+        <img class="parceriasimg" src="img/parc1.png" width="200px">
+        <img class="parceriasimg" src="img/parc6.png" width="200px">
+        <img class="parceriasimg" src="img/parc2.png" width="200px">
+        <img class="parceriasimg" src="img/parc6.png" width="200px">
+        <img class="parceriasimg" src="img/parc1.png" width="200px">
     </div>
     </div>
     <div class="divrod"></div>
@@ -123,11 +131,11 @@
 
     <div class="iconesredes">Redes sociais</div> <br><br>
 
-        <img class="rodi" src="./img/insta.png" width="100px">
-        <img class="rodi" src="./img/ytb.png" width="100px">
-        <img class="rodi" src="./img/facebook.png" width="100px">
-
+        <img class="rodi" src="img/insta.png" width="100px">
+        <img class="rodi" src="img/facebook.png" width="100px">
+        <img class="rodi" src="img/ytb.png" width="100px">
    </div>
+   <span id="contato"></span>
     
     </div>
 </body>
