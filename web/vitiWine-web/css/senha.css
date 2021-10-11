@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0, 0, 0, 0.253)), url("../img/fundo2.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+.div_principal{
+    height: 370px;
+    width: 450px;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;  
+}
+.div_logo{
+    display: flex;
+    margin-left: 110px;
+}
+.icone_preto{
+    margin-top: 35px;
+    width: 60px;
+}
+.div_linha_logo{
+    float: left;
+    height: 45px;
+    width: 2.5px;
+    background-color: black;
+    margin-left: 0px;
+    margin-top: 45px;
+}
+.div_logo_texto{
+    margin-left: 8px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+.div_logo_texto span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.div_texto{
+    margin-top: 15px;
+    margin-right: 0px;
+    font-size: 30px;
+    color: gray;
+    text-align: center;
+}
+.div_texto p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.div_ipt_email{
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.div_ipt_email span{
+    margin-right: 175px;
+    font-size: 20px;
+}
+#ipt_email{
+    border: none;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.div_ipt_email button{
+    color: white;
+    height: 55px;
+    width: 60px;
+    border-radius: 15px;
+    font-size: 30px;
+    background-color: #c755c1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    opacity: 0.5;
+}
+.div_ipt_email button:hover{
+    opacity: 1.0;
+    font-size: 40px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 4px 8px;
+}
+.div_ipt_email button:active{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: 53px;
+    width: 58px;
+}
+.div_login{
+    margin-left: 105px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+}
+.div_login a{
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.2s;
+    color: black;
+}
+a:hover{
+    opacity: 1.0;
+}
+
+
+
+
+
+
+
+
+.div_logo2{
+    display: flex;
+    margin-left: 110px;
+    margin-top: 70px;
+}
+.icone_preto2{
+    margin-top: 35px;
+    width: 60px;
+}
+.div_linha_logo2{
+    float: left;
+    height: 45px;
+    width: 2.5px;
+    background-color: black;
+    margin-left: 0px;
+    margin-top: 45px;
+}
+.div_logo_texto2{
+    margin-left: 8px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+.div_logo_texto2 span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.div2_texto{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn2{
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-size: 15;
+    border-radius: 15px;
+    background-color: #c755c1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    opacity: 0.5;
+}
+.btn2:hover{
+    opacity: 1.0;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 4px 8px;
+}
+.btn2:active{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: 45px;
+    width: 95px;
+}
