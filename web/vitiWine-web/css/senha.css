@@ -19,7 +19,7 @@ body{
     right: 0;
     left: 0;
     top: 0;
-    border-radius: 40px;
+    border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;  
 }
 .div_logo{
@@ -159,7 +159,7 @@ a:hover{
     height: 50px;
     width: 100px;
     color: white;
-    font-size: 15;
+    font-size: 18px;
     border-radius: 15px;
     background-color: #c755c1;
     border: none;
@@ -177,4 +177,7 @@ a:hover{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     height: 45px;
     width: 95px;
+    opacity: 1.0;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 4px 8px;
 }

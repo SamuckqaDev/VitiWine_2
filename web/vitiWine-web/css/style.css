@@ -12,7 +12,6 @@ a{
 }
 header{
     display: flex;
-    justify-content: space-around;
 }
 nav{
     position: fixed;
@@ -36,7 +35,7 @@ nav{
 }
 
 .container{
-    margin-left: 300px;
+    margin-left: 350px;
     width: 80%;
     padding: 35px 0px;
     display: flex;
@@ -70,7 +69,7 @@ nav{
     width: 100%;
 }
 .login{
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 20px;
     margin-right: 100px;
     cursor: pointer;
@@ -128,15 +127,18 @@ nav{
 
 
 .logo{
-    margin-left: 150px;
+    margin-left: 120px;
 }
 .div1{
     border-radius: 8px;
     height: 310px;
     width: 550px;
     background-color: #B057A6;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
     margin-top: -200px;
-    margin-left: 440px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .vitiwine{
@@ -150,6 +152,9 @@ p{
     font-size: 18px;
     color: white;
     text-align: center;
+}
+.div2{
+    margin-top: 150px;
 }
 .img2{
     border-radius: 5px;
@@ -228,27 +233,31 @@ p{
     margin-left: 380px;
     margin-top: -100px;
 }
-.img3{
-    margin-left: 865px;
-    margin-top: -100px;
+.div_sobre{
+    width: 100%;
+    height: 280px;
+    background-color: #e5e5e5;
+    display: flex;
 }
-.boximg3{
+.div_sobre img{
     border-radius: 5px;
+    width: 490px;
+    height: 320px;
+    margin-left: 320px;
+    margin-top: -100px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
 }
-.text2{
-    margin-top: -180px;
-    margin-left: 170px;
+.texto_sobre{
+    margin-top: 70px;
+    margin-left: 100px;
     width: 400px;
     text-align: center;
 }
 .linhafinal{
     background-color: purple;
     height: 3px;
-    width: 350px;
-    margin-top: 40px;
-    margin-left: 190px;
+    width: 100%;
+    margin-top: 10px;
 }
 .divfinal{
     background-color: #b87cb0;
@@ -257,12 +266,13 @@ p{
     font-size: 40px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.parcerias{
-    color: white;
-    margin-left: 620px;
+.parcerias b{
+    margin-left: 450px;
 }
-.divimgs{
-    margin-left: 200px;
+.parcerias{
+
+    color: white;
+    margin-left: 11%;
 }
 .parceriasimg{
     border-radius: 5px;
@@ -275,33 +285,44 @@ p{
 .parceriasimg:hover{
         transform: scale(1.2);
 }
-.divrod{
-    width: 100%;
-    height: 50px;
-}
-.rodape{
+.footer{
+    margin-top: 50px;
     width: 100%;
     height: 300px;
     background-color: purple;
     color: white;
+    display: flex;
 }
-.textorodape{
+.texto_footer{
+    margin-top: 100px;
     margin-left: 150px;
 }
-.redes{
-    margin-top: -140px;
-    margin-left: 900px;
-    letter-spacing: 30px;
+.texto_footer b{
+    font-size: 30px;
 }
 .rodi{
+    width: 100px;
     transition:all 0.3s ease;
 }
 .rodi:hover{
     transform: scale(1.1);
 }
-.iconesredes{
+.rodi_face{
+    margin: 0px 0px 10px 0px;
+    width: 80px;
+    transition:all 0.3s ease;
+}
+.rodi_face:hover{
+    transform: scale(1.1);
+}
+.redes_sociais{
+    margin-left: 400px;
+    margin-top: 100px;
+    letter-spacing: 20px;
+}
+.redes_sociais b{
     letter-spacing: 0px;
     font-size: 30px;
-    margin-left: 120px;
+    margin-left: 60px;
 }
 
