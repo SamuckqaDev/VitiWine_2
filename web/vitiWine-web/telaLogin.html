@@ -12,33 +12,13 @@
   </head>
   <body>
 
-    <header>
-      <nav>
-          <div class="div_logo">
-          <img onclick="document.location.href='./index.html'"  src="./img/logobranco.png">
-      </div>
-
-          <div class="container">
-              <ul>
-                  <li><a href="./index.html">Inicio</a></li>
-                  <li><a href="./index.html">Sobre</a></li>
-                  <li><a href="./index.html">Parceiros</a></li>
-                  <li><a href="./index.html">Contato</a></li>
-                  <li><a href="#">Simulador</a></li>
-                  <button class="login" onclick="document.location.href='../telaLogin.html'">Entrar</button>
-              </ul>
-          </div>
-      </nav>
-  </header>
-
-
     <div class="div_roxo">
         
       <div class="div_branco">
-        <span class="sp_email alinhar">E-mail:</span>
-        <input id="ipt_email" placeholder="E-mail" />
-        <span class="sp_senha alinhar">Senha:</span>
-        <input id="ipt_senha" placeholder="Senha" type="password"/>
+        <span class="fonte_inp alinhar">E-mail:</span>
+        <input id="ipt_email" placeholder="E-mail" value="gui@hotmail.com"/>
+        <span class="fonte_inp alinhar">Senha:</span>
+        <input id="ipt_senha" placeholder="Senha" type="password" value="1234"/>
         <p onclick="esqueceu()" class="p_senha">Esqueceu sua senha?</p>
 
 <!--botãos-->
@@ -52,10 +32,14 @@
 </html>
 <script>
   function entrar() {
-    if (ipt_email.value == "gui@hotmail.com" && ipt_senha.value == "1234") {
-        window.location.href = "./dashbord/index.html"
+    if (ipt_email.value == "gui@hotmail.com" ) {
+        if (ipt_senha.value == "1234") {
+          window.location.href = "./dashbord/index.html"
+        }else{
+          alert("Senha incorreto!");
+        }
     } else {
-      alert("Senha ou usuário incorreto!");
+      alert("E-mail incorreto!");
     }
   }
   function esqueceu(){

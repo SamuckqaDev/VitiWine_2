@@ -25,7 +25,7 @@ a{
 .fundo {
     color: white;
     border-radius: 5px;
-    height: 586px;
+    height: 100vh;
     background-color: #c779be; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #912684, #ebbee5);
     background-repeat: no-repeat;

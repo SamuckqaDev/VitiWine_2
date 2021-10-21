@@ -61,6 +61,10 @@ function merlot() {
   div_calc.innerHTML = `Seu lucro  da uva <b>Merlot</b> será de <b> R$ ${total.toFixed(2)}</b> <br><br> `;
 }
 
+function retorno() {
+  window.location.href = "./index.html"
+}
+
 
 
 

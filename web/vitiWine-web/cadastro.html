@@ -11,36 +11,21 @@
     <script src="../js/script.jss"></script>
   </head>
   <body>
-    <header>
-      <nav>
-          <div class="div_logo">
-          <img onclick="document.location.href='./index.html'"  src="./img/logobranco.png">
-      </div>
 
-          <div class="container">
-              <ul>
-                  <li><a href="./index.html">Inicio</a></li>
-                  <li><a href="./index.html">Sobre</a></li>
-                  <li><a href="./index.html">Parceiros</a></li>
-                  <li><a href="./index.html">Contato</a></li>
-                  <li><a href="#">Simulador</a></li>
-                  <button class="login" onclick="document.location.href='../telaLogin.html'">Entrar</button>
-              </ul>
-          </div>
-      </nav>
-  </header>
+
     <div class="div_roxo">
         
       <div class="div_branco_cadastro">
-        <span class="sp_email alinhar">E-mail:</span>
-        <input id="ipt_email" placeholder="E-mail" />
-        <span class="sp_senha alinhar">Senha:</span>
-        <input id="ipt_senha" placeholder="Senha" type="password"/>
-
-        <span class="sp_senha alinhar">CPF/CNPJ:</span>
-        <input id="ipt_cnpj" placeholder="CPF/CNPJ" type="text"/>
-        <span class="sp_senha alinhar">Nome:</span>
+        <span class="fonte_inp alinhar">Nome:</span>
         <input id="ipt_nome" placeholder="Nome" type="text"/>
+        <span class="fonte_inp alinhar">CPF/CNPJ:</span>
+        <input id="ipt_cnpj" placeholder="CPF/CNPJ" type="text"/>
+        <span class="fonte_inp alinhar">E-mail:</span>
+        <input id="ipt_email" placeholder="E-mail" />
+        <span class="fonte_inp alinhar">Senha:</span>
+        <input id="ipt_senha" placeholder="Senha" type="password"/>
+        <span class="fonte_inp alinhar">Telefone:</span>
+        <input id="ipt_tele" placeholder="Nome" type="text"/>
         
         <button onclick="entrar()" class="btn_entrar">Entrar</button>
         
@@ -54,7 +39,11 @@
         if(ipt_senha.value == '1234'){
           if (ipt_cnpj.value == '123456') {
             if (ipt_nome.value == 'gui') {
-              window.location.href = "./dashbord/index.html"
+              if (ipt_tele.value == '123456') {
+                window.location.href = "./dashbord/index.html"
+              }else{
+                alert("Por favor insirir o telefone")
+              }
             }else{
               alert("Por favor insira o Nome")
             }
