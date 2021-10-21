@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - VitiWine</title>
+    <title>Cadastro - VitiWine</title>
     <link rel="shortcut icon" href="./img/uva.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/login_cadastro.css" />
     <script src="../js/script.jss"></script>
   </head>
   <body>
-
     <header>
       <nav>
           <div class="div_logo">
@@ -30,43 +29,46 @@
           </div>
       </nav>
   </header>
-
-
     <div class="div_roxo">
         
-      <div class="div_branco">
+      <div class="div_branco_cadastro">
         <span class="sp_email alinhar">E-mail:</span>
         <input id="ipt_email" placeholder="E-mail" />
         <span class="sp_senha alinhar">Senha:</span>
         <input id="ipt_senha" placeholder="Senha" type="password"/>
-        <p onclick="esqueceu()" class="p_senha">Esqueceu sua senha?</p>
 
-<!--botãos-->
-      
+        <span class="sp_senha alinhar">CPF/CNPJ:</span>
+        <input id="ipt_cnpj" placeholder="CPF/CNPJ" type="text"/>
+        <span class="sp_senha alinhar">Nome:</span>
+        <input id="ipt_nome" placeholder="Nome" type="text"/>
+        
         <button onclick="entrar()" class="btn_entrar">Entrar</button>
-        <button onclick="cadastrar()" class="btn_cadastro">Cadastro</button>
-      
+        
       </div>
     </div>
   </body>
 </html>
 <script>
   function entrar() {
-    if (ipt_email.value == "gui@hotmail.com" && ipt_senha.value == "1234") {
-        window.location.href = "./dashbord/index.html"
-    } else {
-      alert("Senha ou usuário incorreto!");
+    if (ipt_email.value == "gui@hotmail.com") {
+        if(ipt_senha.value == '1234'){
+          if (ipt_cnpj.value == '123456') {
+            if (ipt_nome.value == 'gui') {
+              window.location.href = "./dashbord/index.html"
+            }else{
+              alert("Por favor insira o Nome")
+            }
+          }else{
+            alert("Por favor insira o CPF/CNPJ")
+          }
+        }else{
+          alert("Por favor insira o senha")
+        }
+    }else{
+      alert("Por favor insira o E-mail")
     }
   }
   function esqueceu(){
     window.location.href = "./senha.html"
-  }
-
-  function cadastrar() {
-    window.location.href = "./cadastro.html"
-  }
-
-  function retorno() {
-    window.location.href = "./index.html"
   }
 </script>

@@ -1,0 +1,243 @@
+.div_roxo {
+  background-color: #b057a69a;
+  width: 40%;
+  height: 100vh;
+  float: right;
+}
+.div_roxo > img {
+  position: absolute;
+  height: 200px;
+  margin-left: 20px;
+}
+.div_branco {
+  background-color: white;
+  width: 60%;
+  height: 70vh;
+  border-radius: 8px;
+  margin: 140px auto;
+  box-shadow: 3px 3px 10px black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div_branco_cadastro{
+  background-color: white;
+  width: 70%;
+  height: 75vh;
+  border-radius: 8px;
+  margin: 140px auto;
+  box-shadow: 3px 3px 10px black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.253)),
+    url(../img/fundo.jpg)
+      no-repeat center center fixed;
+  background-size: cover;
+}
+#ipt_email {
+  margin: 5px auto;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  border: 2px solid #b057a6;
+  box-sizing: border-box;
+  outline: none;
+}
+#ipt_senha {
+  margin: 5px auto;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  border: 2px solid #b057a6;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#ipt_email:focus {
+  border: 3px solid #e4cce0;
+}
+
+#ipt_senha:focus{
+  border: 3px solid #e4cce0;
+}
+
+.sp_email {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: #9b108bb7;
+  box-sizing: border-box;
+  outline: none;
+}
+.sp_senha {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: #9b108bb7;
+}
+
+.alinhar{
+  margin: 5px auto;
+  padding: auto;
+}
+
+.btn_entrar {
+  border-radius: 8px;
+  height: 40px;
+  width: 200px;
+  background-color: #9b108bb7;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 100%;
+  border: none;
+  align-self: center;
+  margin: 20px;
+  padding: auto;
+}
+
+.btn_entrar:hover {
+  color: #b057a6;
+  background-color: #fff;
+  border: 2px solid #b057a6;
+  transition: 0.2s;
+}
+
+.btn_cadastro {
+  border-radius: 8px;
+  height: 40px;
+  width: 200px;
+  background-color: #9b108bb7;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 100%;
+  border: none;
+  align-self: center;
+  }
+
+  .btn_cadastro:hover {
+    color: #b057a6;
+    background-color: #fff;
+    border: 2px solid #b057a6;
+    transition: 0.2s;
+  }
+
+.alterar_img {
+  margin: 0;
+  padding: auto;
+  cursor: pointer;
+}
+.p_senha{
+  cursor: pointer;
+  margin-top: 15px;
+  text-decoration: underline;
+  text-align: center;
+}
+header{
+  display: flex;
+}
+nav{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background: #821F7B;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  opacity: 0.9;
+  font-size: 20px;
+  
+}
+
+.container{
+  font-family:'Roboto slab', sans-serif; 
+  margin-left: 165px;
+  width: 80%;
+  padding: 35px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.container ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.container ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+.container ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;  
+  background: #cc87c9;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.2s;
+
+}
+.container ul li:hover::after{
+  width: 100%;
+}
+.login{
+  border-radius: 5px;
+  font-size: 20px;
+  margin-right: 100px;
+  cursor: pointer;
+  border-color: #8e44ad;
+  color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.login:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.login:hover {
+  color: rgb(170, 0, 128);
+}
+.login:hover:after {
+  width: 110%;
+}
+button{
+  font-weight: bold;
+  border-radius: 8px;
+  height: 50px;
+  width: 120px;
+  background-color: rgba(255, 195, 232, 0.349);
+  border: none;
+  box-shadow:0px 0px 1px black;
+  cursor: pointer;
+}
+.div_logo img{
+  width: 250px;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 10px;
+}

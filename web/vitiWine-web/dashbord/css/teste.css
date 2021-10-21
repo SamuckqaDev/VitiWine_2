@@ -1,0 +1,253 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #dfcadc;
+}
+
+.left {
+    width: 10%;
+    display: inline-block;
+}
+.right {
+    width: 80%;
+    display: inline-block;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.fundo {
+    margin: 0 auto;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.fundo .container {
+    background-color: white;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0px;
+}
+
+.box-temperatura {
+    border-radius: 5px;
+    margin: 20px;
+    width: 90%;
+    height: 200px;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #611358, #ebbee5);
+}
+
+.box-temperatura h3 {
+    color: white;
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+.box-temperatura img {
+    width: 50px;
+}
+
+.img_u{
+    margin-left: 400px;
+    margin-top: 30px;
+    padding: auto;
+}
+
+.img_t{
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: auto;
+}
+
+.box-temperatura span {
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.box-temperatura .fundo{
+    margin: 0;
+    padding: auto;
+}
+
+
+.box-grafico {
+    border-radius: 5px;
+    height: 250px;
+    width: 90%;
+    background-color: #F3DBF3;
+    align-self: center;
+}
+
+.box-grafico .fundo{
+    margin: 0 auto;
+    padding: auto;
+}
+
+.box-status {
+    border-radius: 5px;
+    height: 150px;
+    width: 50%;
+    background-color: #D88BD9;
+    align-self:center;
+    flex-wrap: wrap;
+}
+
+.box-status .status-text {
+    color: white;
+    height: 0;
+    margin: 1px;
+}
+
+.box-status .color-status{
+    width: 20px;
+    height: 20px;
+    background-color: #ff000067;
+    margin-left: 30px;
+  
+}
+
+.box-status .color-status1{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 255, 0.329);
+    margin-left: 30px;
+}
+
+.box-status span {
+    margin: auto 70px;
+    padding: auto; 
+    font-size: 15px;
+}
+
+.box-status .fundo{
+    margin: 0;
+    padding: auto;
+}
+
+/*Lateral*/
+
+.lateral {
+    background-color: white;
+    height: 700px;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #912684;
+    align-self: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: auto;
+    display: block;
+}
+
+.box-logo img {
+    width: 100%;
+    margin: 0;
+    padding: auto;
+}
+
+.box-empresa {
+    height: 90px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    background-color: #B058A6;
+    text-align: center;
+    margin: 0;
+    padding: auto;
+}
+
+.box-duvida {
+    height: 90px;
+    width: 100%;
+    background-color: #B058A6;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: auto;
+    color: white;
+    text-align: center;
+}
+
+.button{
+        
+    border-radius: 4px;
+    background-color: #821F7B;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: auto;
+    width: 100px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 15px;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.box-clima{
+    height: 250px;
+    width: 100%;
+    background-color: #C187BA;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+/*Div "pai"*/
+.pai {
+    margin: 50px;
+    padding: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+

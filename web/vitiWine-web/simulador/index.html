@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>calculadora financeira</title>
+    <script src="calc.js"></script>
+</head>
+<!-- Corpo -->
+
+<body >
+
+    <!-- Barra de navegação/header -->
+    <header>
+        <nav>
+            <div class="div_logo">
+            <img onclick="document.location.href='./index.html'"  src="../img/logobranco.png">
+        </div>
+
+            <div class="container">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html">Sobre</a></li>
+                    <li><a href="../index.html">Parceiros</a></li>
+                    <li><a href="../index.html">Contato</a></li>
+                    <li><a href="#">Simulador</a></li>
+                    <button class="login" onclick="document.location.href='../telaLogin.html'">Entrar</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="fundo">
+           <!--titulo-->
+   <div class="aliamento">
+       <div id="div_some">
+        <div>
+            <p>
+                <h2>Calculadora financeira</h2> <br>
+                <h3>Aumente sua margem de lucro conosco!</h3><br>
+            </p>
+        </div>
+
+                <p>
+
+                    <span> Veja como ganhar mais lucratividade! <br>Digite aqui seu faturamento mensal</span> <br><br>
+                <input id="faturamento" type="text" placeholder="  Insira o faturamento"> <br> <br>
+
+                <div class="btn-calcular">
+                    <button onclick="Calcular()">Calcular</button>
+                </div>
+                <br><br>
+            </div> 
+                <!-- Bottons -->
+                <div id="divsome" style="display: none;">
+            <span>Uvas mais utilizadas na fabricação de vinho <br> Preço médio</span> <br> <br>
+            <button onclick="italia()">Uva Italia</button>
+            <button onclick="thompson()">Uva Thompson</button>
+            <button onclick="crimson()"> Uva Crimson</button>
+            <button onclick="malbec()"> Uva Malbec</button>
+            <button onclick="merlot()"> Uva Merlot</button>
+
+            <br>
+            <br>
+
+             <!-- Fim buttons -->
+
+            <div id="div_calc"></div>
+            </div>
+    </div>
+   </div>
+
+</body>
+
+</html>

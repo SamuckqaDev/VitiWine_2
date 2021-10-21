@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/teste.css">
+    <link rel="shortcut icon" href="./img/uva.jpg" type="image/x-icon">
+
+    <title>Dashboard - VitiWine</title>
+</head>
+<body>
+
+    <!--Divs do fundo branco-->
+        <div class="pai">
+            <div class="fundo right">
+                <div class="container">
+                         <div class="box-temperatura">
+                            
+                           <h3>Temperatura em tempo real:</h3>
+                            
+                           <img src="./img/temperatura.png" class="img_t">
+                            <span>20 °C</span>
+
+                            <img src="./img/umidade.png" class="img_u">
+                            <span>18 %</span>
+
+                         </div>
+                         <div class="box-grafico">
+                         <div  style="width:55%;
+                                      position: relative;
+                                      margin-left: 200px;">
+                             <canvas id="teste"></canvas>
+                         </div>
+                        </div>
+
+                         <div class="box-status" >
+                             <div class="status-text">
+                                <h3>Status de perdas</h3>
+                                <div class="color-status"></div>
+                                <span>Produção boa</span>
+                                <div class="color-status1"></div> 
+                                <span>Produção ruim</span>
+                             </div>
+
+                         <div style="position: relative;
+                                     width: 28%;
+                                     margin-left: 250px;">
+                             <canvas id="pizza"></canvas>
+                         </div>
+                        </div>
+                  </div>
+             </div>
+
+    <!--Divs lateral-->
+
+            <div class="lateral left">
+                <div class="container">
+                 <div class="box-logo">
+                    <img src="./img/logobranco.png" alt="Logo da empresa, formato de uva">
+                    </div>
+                    <div class="box-empresa">
+                        <h3>Olá! ...</h3>
+                    </div>
+                    <div class="box-duvida">
+                        <h4>Caso tenha dúvidas entre em contato</h4>
+                        <button class="button"> <span>Contato</span></button>
+                    </div>
+                    <div class="box-clima">
+                        De olho no clima
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
