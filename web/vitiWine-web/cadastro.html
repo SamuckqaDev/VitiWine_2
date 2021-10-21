@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro - VitiWine</title>
-    <link rel="shortcut icon" href="./img/uva.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="shortcut icon" href="./img/uva.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/login_cadastro.css" />
     <script src="../js/script.jss"></script>
   </head>
   <body>
 
-
+    <div class="div_logo">
+      <img onclick="document.location.href='./index.html'" src="./img/logobranco.png">
+      </div>
     <div class="div_roxo">
         
       <div class="div_branco_cadastro">
@@ -21,13 +22,13 @@
         <span class="fonte_inp alinhar">CPF/CNPJ:</span>
         <input id="ipt_cnpj" placeholder="CPF/CNPJ" type="text"/>
         <span class="fonte_inp alinhar">E-mail:</span>
-        <input id="ipt_email" placeholder="E-mail" />
+        <input type="email" id="ipt_email" placeholder="E-mail" />
         <span class="fonte_inp alinhar">Senha:</span>
         <input id="ipt_senha" placeholder="Senha" type="password"/>
         <span class="fonte_inp alinhar">Telefone:</span>
         <input id="ipt_tele" placeholder="Nome" type="text"/>
         
-        <button onclick="entrar()" class="btn_entrar">Entrar</button>
+        <button onclick="document.location.href='./telaLogin.html'" type="button"  class="btn_entrar">Cadastrar</button>
         
       </div>
     </div>

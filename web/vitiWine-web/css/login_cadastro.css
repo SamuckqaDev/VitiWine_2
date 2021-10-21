@@ -1,3 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.div_logo img{
+  width: 235px;
+  position: absolute;
+  margin-left: 850px;
+  margin-top: -50px;
+  cursor: pointer;
+}
 .div_roxo {
   background-color: #b057a69a;
   width: 40%;
