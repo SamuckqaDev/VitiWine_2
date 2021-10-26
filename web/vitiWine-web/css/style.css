@@ -6,6 +6,9 @@
 body{
     background-color: #e5e5e5;
 }
+html {
+    scroll-behavior: smooth;
+}
 a{
     color: white;
     text-decoration: none;
