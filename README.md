@@ -7,7 +7,7 @@
 
 
 <h2>Missão</h2>
-<p>Visando economia, lucro e satisfação de nossos cleintes, sempre engajados e no foco com a melhores soluções do mercado.</p>
+<p>Visando economia, lucro e satisfação de nossos clientes, sempre engajados e no foco com a melhores soluções do mercado.</p>
 
 
 <h2>Quais são os nossos valores ?</h2>
