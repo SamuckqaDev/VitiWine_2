@@ -3,6 +3,10 @@
     padding: 0;
     font-family:'Roboto slab', sans-serif;
 }
+/* Trasição da barra de navegação */
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #e5e5e5;
 }
@@ -10,6 +14,8 @@ a{
     color: white;
     text-decoration: none;
 }
+
+/* Estilização da barra de negavegão */
 header{
     display: flex;
 }
@@ -62,6 +68,7 @@ nav{
 .container ul li:hover::after{
     width: 100%;
 }
+/* Botão entrar */
 .login{
     border-radius: 5px;
     font-size: 20px;
@@ -97,6 +104,8 @@ nav{
     width: 110%;
   }
 
+  /* Definindo especificações para o botão */
+
   button{
     font-weight: bold;
     border-radius: 8px;
@@ -107,19 +116,24 @@ nav{
     box-shadow:0px 0px 1px black;
     cursor: pointer;
   }
+  /* Imagem presente na barra de navegação */
+  .div_logo img{
+      width: 250px;
+      cursor: pointer;
+      margin-left: 100px;
+      margin-top: 10px;
+  }
+
+  /* Estilização do banner juntamento com o degrade */
   .divbanner{
     background: linear-gradient(rgba(0,0,0,0.85), rgba(0, 0, 0, 0.253)), url("../img/fundo2.jpg") no-repeat center center;
     background-size: cover;
     height: 70vh;
     width: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Para deixar o fundo do banner fixo ao rolar a tela */
 }
-.div_logo img{
-    width: 250px;
-    cursor: pointer;
-    margin-left: 100px;
-    margin-top: 10px;
-}
+
+/* Primeira div no meio da pagina */
 .div1{
     border-radius: 8px;
     height: 310px;
@@ -132,6 +146,9 @@ nav{
     margin-top: -200px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+/* Texto principal */
+
 .vitiwine{
     
     font-size: 15px;
@@ -139,14 +156,20 @@ nav{
     width: 300px;
     color: white;
 }
+
+/* Definindo estilo da Tag P */
 p{
     font-size: 18px;
     color: white;
     text-align: center;
 }
+
+/* Div que da entrada ao segundo conteudo na pagina */
 .div2{
     margin-top: 150px;
 }
+
+/* Primeira imagem */
 .img2{
     border-radius: 5px;
     width: 400px;
@@ -156,6 +179,8 @@ p{
     float: left;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+/* Divs linhas sãos as pequenas linhas roxas em volta do texto sobre valores e missao da empresa */
 .divlinha1{
     background-color: #B057A6;
     height: 3px;
@@ -177,6 +202,8 @@ p{
     margin-left: 950px;
     margin-top: -5px;
 }
+
+/* Editando o texto missao */
 .missao{
     font-size: 30px;
     margin-left: 20px;
@@ -187,6 +214,8 @@ p{
     
     
 }
+
+/* Editando texto valores */
 .valores{
     font-size: 30px;
     margin-left: 180px;
@@ -198,6 +227,8 @@ p{
     margin-left: 23px;
     text-align: center;
 }
+
+/* Aqui inicia a div referente ao nosso produto */
 .divbanner2{
     background-color: #B057A6;
     height: 500px;
@@ -213,6 +244,7 @@ p{
     margin-left: 100px;
     font-size: 30px;
 }
+/* Movendo a imagem do senso pela div */
 .sensor{
     margin: 150px 0px 0px 800px;
     color: white;
@@ -220,16 +252,20 @@ p{
     width: 500px;
     font-size: 25px;
 }
+/* Movendo o arduido pela div */
 .arduino{
     margin-left: 380px;
     margin-top: -100px;
 }
+
+/* Parte separada para a formatação do texto e definição da localização do texto */
 .div_sobre{
     width: 100%;
     height: 280px;
     background-color: #e5e5e5;
     display: flex;
 }
+/* Abertura da div SOBRE */
 .div_sobre img{
     border-radius: 5px;
     width: 490px;
@@ -238,18 +274,24 @@ p{
     margin-top: -100px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+/* Texto */
 .texto_sobre{
     margin-top: 70px;
     margin-left: 100px;
     width: 400px;
     text-align: center;
 }
+
+/* Linha/div roxa abaixo do texto */
 .linhafinal{
     background-color: purple;
     height: 3px;
     width: 100%;
     margin-top: 10px;
 }
+
+/* Aqui inicia a estilização da ultima div antes do footes / ABA PARCERIAS */
 .divfinal{
     background-color: #b87cb0;
     width: 100%;
@@ -265,6 +307,7 @@ p{
     color: white;
     margin-left: 11%;
 }
+/* Imagens localizadas na DIV */
 .parceriasimg{
     border-radius: 5px;
     width:200px;
@@ -276,6 +319,8 @@ p{
 .parceriasimg:hover{
         transform: scale(1.2);
 }
+
+/* Footer/contato */
 .footer{
     margin-top: 50px;
     width: 100%;
@@ -291,6 +336,7 @@ p{
 .texto_footer b{
     font-size: 30px;
 }
+/* Rodi serias as imagens localizadas no footes - facebook/insta/youtube */
 .rodi{
     width: 100px;
     transition:all 0.3s ease;
@@ -304,12 +350,12 @@ p{
     transition:all 0.3s ease;
 }
 .rodi_face:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 .redes_sociais{
     margin-left: 400px;
-    margin-top: 100px;
-    letter-spacing: 20px;
+    margin-top: 100px; 
+    letter-spacing: 20px; /* Para criar o espaço entre os elementos */
 }
 .redes_sociais b{
     letter-spacing: 0px;

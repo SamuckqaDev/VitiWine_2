@@ -3,7 +3,7 @@ function Calcular() {
   var result1 = ipt_calculo * 0.1;
   var result = Number(result1 + ipt_calculo);
 
-  div_calc.innerHTML = `Seu lucro atual é de <b> R$ ${ipt_calculo.toFixed(2)}</b>Após aquisição dos nossos serviços seus lucros passam  ser de<b> R$ ${result.toFixed(2)}</b> <br><br> `;
+  div_calc.innerHTML = `Seu lucro atual é de <b> R$ ${ipt_calculo.toFixed(2)}</b> <br> Após aquisição dos nossos serviços seus lucros passam  ser de<b> R$ ${result.toFixed(2)}</b> <br><br> `;
 
   div_some.style.display = 'none'
   divsome.style.display = 'block'
