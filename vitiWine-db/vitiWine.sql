@@ -96,8 +96,13 @@ select * from Usuário inner join empresa on Usuário.fk_empresa = empresa.id_em
 
 select * from sensor inner join estufa on sensor.fk_estufa = estufa.id_estufa;
 
+select * from estufa right join empresa on estufa.fk_empresa = empresa.id_empresa;
 
+select * from registro right join sensor on registro.fk_sensor = sensor.id_sensor;
 
+select * from Usuário right join empresa on Usuário.fk_empresa = empresa.id_empresa;
+
+select * from sensor right join estufa on sensor.fk_estufa = estufa.id_estufa;
 
        
 	
