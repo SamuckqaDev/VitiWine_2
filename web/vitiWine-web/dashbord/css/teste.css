@@ -98,33 +98,13 @@ body {
     background-color: #D88BD9;
     align-self:center;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.box-status .status-text {
-    color: white;
-    height: 0;
-    margin: 1px;
-}
-
-.box-status .color-status{
-    width: 20px;
-    height: 20px;
-    background-color: #ff000067;
-    margin-left: 30px;
-  
-}
-
-.box-status .color-status1{
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 0, 255, 0.329);
-    margin-left: 30px;
-}
-
-.box-status span {
-    margin: auto 70px;
-    padding: auto; 
-    font-size: 15px;
+.status-img{
+    margin-top: -20px;
+      height: 220px;
 }
 
 .box-status .fundo{
@@ -154,6 +134,7 @@ body {
     margin: 20px 0;
     padding: auto;
     display: block;
+    cursor: pointer;
 }
 
 .box-logo img {
@@ -333,12 +314,17 @@ input[type=text] {
         height: 50px;
         transition: all 0.5s;
         cursor: pointer;
-        margin: 50px;
+        margin: 10px;
       }
       
 .button1:hover {
         padding-right: 20px;
       }
+
+.ajuste-btn{
+    display: flex;
+    flex-direction: column;
+}
       
 
 
