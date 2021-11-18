@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - VitiWine</title>
-    <link rel="shortcut icon" href="./img/uva.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/uva.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/login_cadastro.css" />
     <script src="../js/script.jss"></script>
   </head>
   <body>
     <div class="div_logo">
-      <img onclick="document.location.href='./index.html'" src="./img/logobranco.png">
+      <img onclick="document.location.href='./index.html'" src="./assets/img/logobranco.png">
     </div>
     <div class="div_roxo">
         
@@ -27,9 +27,32 @@
       
         <button onclick="entrar()" class="btn_entrar">Entrar</button>
         <button onclick="cadastrar()" class="btn_cadastro">Cadastro</button>
+
       
       </div>
     </div>
+  
+  <!--Tela cadastro-->
+
+<div class="modal-overlay ativo">
+  <div class="modal">
+    <h3 class="fonte_inp alinhar">Cadastro</h3>
+    <div class="inp-group">
+      <span class="fonte_inp alinhar">Nome</span>
+      <input type="text" id="ipt_nome" placeholder="Nome">
+      <span class="fonte_inp alinhar">CPF/CNPJ:</span>
+      <input type="text" id="ipt_cnpj" placeholder="CPF/CNPJ">
+      <span class="fonte_inp alinhar">Telefone:</span>
+      <input type="text" id="ipt_tele" placeholder="Telefone">
+      <span class="fonte_inp alinhar">E-mail:</span>
+      <input type="text" id="ipt_email" placeholder="E-mail">
+      <span class="fonte_inp alinhar">Senha:</span>
+      <input type="text" id="ipt_senha" placeholder="Senha">
+      <button onclick="document.location.href='./telaLogin.html'" type="button"  class="btn_entrar">Cadastrar</button>
+    </div>
+  </div>
+</div>
+
   </body>
 </html>
 <script>
