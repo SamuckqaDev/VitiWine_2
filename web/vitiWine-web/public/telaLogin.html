@@ -75,4 +75,71 @@
 </script>
   </body>
 </html>
+<script>
 
+  function cadastrar() {
+
+      var nomeVar = ipt_nome.value;
+      var emailVar = ipt_email1.value;
+      var senhaVar = ipt_senha1.value;
+      var telefoneVar = ipt_tele.value;
+      var cnpjVar = ipt_cnpj.value;
+
+      if (nomeVar == "" || emailVar == "" || senhaVar == "" || telefoneVar == "" || cnpjVar == "") {
+
+          window.alert("Preencha todos os campos para prosseguir!");
+          if (nomeVar == "") {
+              console.log('nome está em branco')
+          }
+          if (emailVar == "") {
+              console.log('email está em branco')
+          }
+          if (senhaVar == "") {
+              console.log('senha está em branco')
+          }
+          if (telefoneVar == "") {
+              console.log('telefone esta em branco')
+          }
+          if (cnpjVar == "") {
+              console.log('cnpj em branco')
+          }
+          return false;
+      }
+
+      if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+          window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+          return false;
+      }
+
+     
+      fetch("/usuarios/cadastrar", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+              nomeServer: nomeVar,
+              emailServer: emailVar,
+              senhaServer: senhaVar,
+              telefoneServer: telefoneVar,
+              cnpjServer: cnpjVar
+          })
+      }).then(function (resposta) {
+
+          console.log("resposta: ", resposta);
+
+          if (resposta.ok) {
+              window.alert("Cadastro realizado com sucesso!");
+              window.location = "login.html";
+              limparFormulario();
+          } else {
+              throw ("Houve um erro ao tentar realizar o cadastro!");
+          }
+      }).catch(function (resposta) {
+          console.log(`#ERRO: ${resposta}`);
+      });
+
+      return false;
+  }
+
+</script>
