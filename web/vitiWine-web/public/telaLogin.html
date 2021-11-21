@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - VitiWine</title>
     <link rel="shortcut icon" href="./assets/img/uva.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/login_cadastro.css" />
-    <script src="../js/script.jss"></script>
   </head>
   <body>
     <div class="div_logo">
@@ -18,15 +16,15 @@
         
       <div class="div_branco">
         <span class="fonte_inp alinhar">E-mail:</span>
-        <input id="ipt_email" placeholder="E-mail" value="gui@hotmail.com"/>
+        <input id="ipt_email" placeholder="E-mail"/>
         <span class="fonte_inp alinhar">Senha:</span>
-        <input id="ipt_senha" placeholder="Senha" type="password" value="1234"/>
+        <input id="ipt_senha" placeholder="Senha" type="password"/>
         <p onclick="esqueceu()" class="p_senha">Esqueceu sua senha?</p>
 
 <!--botãos-->
       
         <button onclick="entrar()" class="btn_entrar">Entrar</button>
-        <button onclick="cadastrar()" class="btn_cadastro">Cadastro</button>
+        <button onclick="Modal.open()" class="btn_cadastro">Cadastro</button>
 
       
       </div>
@@ -34,48 +32,43 @@
   
   <!--Tela cadastro-->
 
-<div class="modal-overlay ativo">
-  <div class="modal">
-    <h3 class="fonte_inp alinhar">Cadastro</h3>
-    <div class="inp-group">
-      <span class="fonte_inp alinhar">Nome</span>
-      <input type="text" id="ipt_nome" placeholder="Nome">
-      <span class="fonte_inp alinhar">CPF/CNPJ:</span>
-      <input type="text" id="ipt_cnpj" placeholder="CPF/CNPJ">
-      <span class="fonte_inp alinhar">Telefone:</span>
-      <input type="text" id="ipt_tele" placeholder="Telefone">
-      <span class="fonte_inp alinhar">E-mail:</span>
-      <input type="text" id="ipt_email" placeholder="E-mail">
-      <span class="fonte_inp alinhar">Senha:</span>
-      <input type="text" id="ipt_senha" placeholder="Senha">
-      <button onclick="document.location.href='./telaLogin.html'" type="button"  class="btn_entrar">Cadastrar</button>
+  <div class="modal-overlay">
+    <div class="modal">
+      <h3 class="fonte_inp alinhar">Cadastro</h3>
+      <div class="inp-group">
+        <span class="fonte_inp alinhar">Nome</span>
+        <input type="text" id="ipt_nome" placeholder="Nome">
+        <span class="fonte_inp alinhar">CPF/CNPJ:</span>
+        <input type="text" id="ipt_cnpj" placeholder="CPF/CNPJ">
+        <span class="fonte_inp alinhar">Telefone:</span>
+        <input type="text" id="ipt_tele" placeholder="Telefone">
+        <span class="fonte_inp alinhar">E-mail:</span>
+        <input type="text" id="ipt_email1" placeholder="E-mail">
+        <span class="fonte_inp alinhar">Senha:</span>
+        <input type="text" id="ipt_senha1" placeholder="Senha">
+        <button onclick="Modal.close()" type="button"  class="btn_entrar">Cadastrar</button>
+      </div>
     </div>
-  </div>
 </div>
 
+
+<script>
+  const Modal = {
+    open(){
+        document
+            .querySelector('.modal-overlay')
+            .classList
+            .add('active')
+
+    },
+    close(){
+        document
+            .querySelector('.modal-overlay')
+            .classList
+            .remove('active')
+    }
+}
+</script>
   </body>
 </html>
-<script>
-  function entrar() {
-    if (ipt_email.value == "gui@hotmail.com" ) {
-        if (ipt_senha.value == "1234") {
-          window.location.href = "./dashbord/index.html"
-        }else{
-          alert("Senha incorreto!");
-        }
-    } else {
-      alert("E-mail incorreto!");
-    }
-  }
-  function esqueceu(){
-    window.location.href = "./senha.html"
-  }
 
-  function cadastrar() {
-    window.location.href = "./cadastro.html"
-  }
-
-  function retorno() {
-    window.location.href = "./index.html"
-  }
-</script>

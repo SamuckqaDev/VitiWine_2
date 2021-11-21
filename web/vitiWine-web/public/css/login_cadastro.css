@@ -71,6 +71,25 @@ body {
   outline: none;
 }
 
+#ipt_email1{
+  margin: 5px auto;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  border: 2px solid #b057a6;
+  box-sizing: border-box;
+  outline: none;
+}
+#ipt_senha1 {
+  margin: 5px auto;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  border: 2px solid #b057a6;
+  box-sizing: border-box;
+  outline: none;
+}
+
 #ipt_cnpj{
   margin: 5px auto;
   border-radius: 5px;
@@ -110,6 +129,14 @@ body {
 }
 
 #ipt_senha:focus{
+  border: 3px solid #e4cce0;
+}
+
+#ipt_email1:focus {
+  border: 3px solid #e4cce0;
+}
+
+#ipt_senha1:focus{
   border: 3px solid #e4cce0;
 }
 
@@ -190,30 +217,37 @@ body {
 
 /*Tela cadastro =======*/
 
-.modal-overlay{
+.modal-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+
+  background-color: rgba(0,0,0,0.7);
+
   position: fixed;
   top: 0;
-  display: flex;
+
+  display:flex;
   align-items: center;
   justify-content: center;
- /* opacity: 0;
-  visibility: hidden;*/
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 999;
 }
 
-.modal-overlay .ativo{
+.modal-overlay.active {
   opacity: 1;
   visibility: visible;
 }
 
-.modal{
-  background: white;
-  padding: 2.4em;
-  border-radius: 5px;
-}
+.modal {
+  background: #F0F2f5;
+  padding: 2.4rem;
 
+  position: relative;
+  z-index: 1;
+}
 .inp-group{
   display: flex;
   flex-direction: column;
