@@ -34,7 +34,10 @@
 
   <div class="modal-overlay">
     <div class="modal">
-      <h3 class="fonte_inp alinhar">Cadastro</h3>
+      <div class="info">
+        <h3 class="fonte_inp alinhar">Cadastro</h3>
+      <img src="./assets/img/botao-fechar.png" class="btn-fecha" onclick="Modal.close()" alt="Fechar">
+      </div>
       <div class="inp-group">
         <span class="fonte_inp alinhar">Nome</span>
         <input type="text" id="ipt_nome" placeholder="Nome">
@@ -53,6 +56,7 @@
 
 
 <script>
+
   const Modal = {
     open(){
         document

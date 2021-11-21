@@ -247,8 +247,22 @@ body {
 
   position: relative;
   z-index: 1;
+  border-radius: 5px;
 }
+
 .inp-group{
   display: flex;
   flex-direction: column;
+}
+
+.btn-fecha{
+  height: 25px;
+  float: right;
+  cursor: pointer;
+}
+
+.info{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
