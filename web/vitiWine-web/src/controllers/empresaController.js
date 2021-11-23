@@ -1,4 +1,4 @@
-var usuarioModel = require("../models/usuarioModel");
+var empresaModel = require("../models/empresaModel");
 
 var sessoes = [];
 
@@ -8,7 +8,7 @@ function testar(req, res) {
 }
 
 function listar(req, res) {
-  usuarioModel
+  empresaModel
     .listar()
     .then(function (resultado) {
       if (resultado.length > 0) {
@@ -36,7 +36,7 @@ function entrar(req, res) {
   } else if (senha == undefined) {
     res.status(400).send("Sua senha está indefinida!");
   } else {
-    usuarioModel
+    empresaModel
       .entrar(email, senha)
       .then(function (resultado) {
         console.log(`\nResultados encontrados: ${resultado.length}`);
@@ -63,25 +63,25 @@ function entrar(req, res) {
 }
 
 function cadastrar(req, res) {
-  var nome = req.body.nomeServer;
+  var nome_empresa = req.body.nomeServer;
+  var cnpj = req.body.cnpjServer;
+  var celular = req.body.celularServer;
   var email = req.body.emailServer;
   var senha = req.body.senhaServer;
-  var celular = req.body.celularServer;
-  var cnpj = req.body.cnpjServer;
 
-  if (nome == undefined) {
+  if (nome_empresa == undefined) {
     res.status(400).send("Seu nome está undefined!");
+  } else if (cnpj == undefined) {
+    res.status(400).send("Seu cnpj está undefined!");
+  } else if (celular == undefined) {
+    res.status(400).send("Sua celular está undefined!");
   } else if (email == undefined) {
     res.status(400).send("Seu email está undefined!");
   } else if (senha == undefined) {
-    res.status(400).send("Sua senha está undefined!");
-  } else if (celular == undefined) {
-    res.status(400).send("Seu telefone está undefined!");
-  } else if (cnpj == undefined) {
-    res.status(400).send("Seu cnpj está undefined!");
+    res.status(400).send("Seu senha está undefined!");
   } else {
-    usuarioModel
-      .cadastrar(nome, email, senha, celular, cnpj)
+    empresaModel
+      .cadastrar(nome_empresa, cnpj, celular, email, senha)
       .then(function (resultado) {
         res.json(resultado);
       })

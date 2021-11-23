@@ -5,142 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - VitiWine</title>
-    <link rel="shortcut icon" href="./assets/img/uva.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/uva.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/login_cadastro.css" />
-    <script src="./js/funcoes.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <div class="div_logo">
-      <img onclick="document.location.href='./index.html'" src="./assets/img/logobranco.png">
+      <img
+        onclick="document.location.href='./index.html'"
+        src="./assets/img/logobranco.png"
+      />
     </div>
     <div class="div_roxo">
-        
       <div class="div_branco">
         <span class="fonte_inp alinhar">E-mail:</span>
-        <input id="ipt_email" placeholder="E-mail"/>
+        <input id="ipt_email" placeholder="E-mail" />
         <span class="fonte_inp alinhar">Senha:</span>
-        <input id="ipt_senha" placeholder="Senha" type="password"/>
+        <input id="ipt_senha" placeholder="Senha" type="password" />
         <p onclick="esqueceu()" class="p_senha">Esqueceu sua senha?</p>
 
-<!--botãos-->
-      
+        <!--botãos-->
+
         <button onclick="entrar()" class="btn_entrar">Entrar</button>
         <button onclick="Modal.open()" class="btn_cadastro">Cadastro</button>
-
-      
       </div>
     </div>
-  
-  <!--Tela cadastro-->
 
-  <div class="modal-overlay">
-    <div class="modal">
-      <div class="info">
-        <h3 class="fonte_inp alinhar">Cadastro</h3>
-      <img src="./assets/img/botao-fechar.png" class="btn-fecha" onclick="Modal.close()" alt="Fechar">
-      </div>
-      <div class="inp-group">
-        <span class="fonte_inp alinhar">Nome</span>
-        <input type="text" id="ipt_nome" placeholder="Nome">
-        <span class="fonte_inp alinhar">CPF/CNPJ:</span>
-        <input type="text" id="ipt_cnpj" placeholder="CPF/CNPJ">
-        <span class="fonte_inp alinhar">Telefone:</span>
-        <input type="text" id="ipt_tele" placeholder="Telefone">
-        <span class="fonte_inp alinhar">E-mail:</span>
-        <input type="text" id="ipt_email1" placeholder="E-mail">
-        <span class="fonte_inp alinhar">Senha:</span>
-        <input type="text" id="ipt_senha1" placeholder="Senha">
-        <button onclick="Modal.close()" type="button"  class="btn_entrar">Cadastrar</button>
+    <!--Tela cadastro-->
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="info">
+          <h3 class="fonte_inp alinhar">Cadastro</h3>
+          <img
+            src="./assets/img/botao-fechar.png"
+            class="btn-fecha"
+            onclick="Modal.close()"
+            alt="Fechar"
+          />
+        </div>
+        <div class="inp-group">
+          <span class="fonte_inp alinhar">Nome</span>
+          <input type="text" id="ipt_nome" placeholder="Nome" />
+          <span class="fonte_inp alinhar">CPF/CNPJ:</span>
+          <input type="text" id="ipt_cnpj" placeholder="CPF/CNPJ" />
+          <span class="fonte_inp alinhar">Telefone:</span>
+          <input type="text" id="ipt_tele" placeholder="Telefone" />
+          <span class="fonte_inp alinhar">E-mail:</span>
+          <input type="text" id="ipt_email1" placeholder="E-mail" />
+          <span class="fonte_inp alinhar">Senha:</span>
+          <input type="text" id="ipt_senha1" placeholder="Senha" />
+          <button onclick="cadastrar()" type="button" class="btn_entrar">
+            Cadastrar
+          </button>
+        </div>
       </div>
     </div>
-</div>
-
-
-<script>
-
-  const Modal = {
-    open(){
-        document
-            .querySelector('.modal-overlay')
-            .classList
-            .add('active')
-
-    },
-    close(){
-        document
-            .querySelector('.modal-overlay')
-            .classList
-            .remove('active')
-    }
-}
-</script>
   </body>
 </html>
-<script>
-
-  function cadastrar() {
-
-      var nomeVar = ipt_nome.value;
-      var emailVar = ipt_email1.value;
-      var senhaVar = ipt_senha1.value;
-      var telefoneVar = ipt_tele.value;
-      var cnpjVar = ipt_cnpj.value;
-
-      if (nomeVar == "" || emailVar == "" || senhaVar == "" || telefoneVar == "" || cnpjVar == "") {
-
-          window.alert("Preencha todos os campos para prosseguir!");
-          if (nomeVar == "") {
-              console.log('nome está em branco')
-          }
-          if (emailVar == "") {
-              console.log('email está em branco')
-          }
-          if (senhaVar == "") {
-              console.log('senha está em branco')
-          }
-          if (telefoneVar == "") {
-              console.log('telefone esta em branco')
-          }
-          if (cnpjVar == "") {
-              console.log('cnpj em branco')
-          }
-          return false;
-      }
-
-      if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
-          window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
-          return false;
-      }
-
-     
-      fetch("/usuarios/cadastrar", {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-              nomeServer: nomeVar,
-              emailServer: emailVar,
-              senhaServer: senhaVar,
-              telefoneServer: telefoneVar,
-              cnpjServer: cnpjVar
-          })
-      }).then(function (resposta) {
-
-          console.log("resposta: ", resposta);
-
-          if (resposta.ok) {
-              window.alert("Cadastro realizado com sucesso!");
-              window.location = "login.html";
-              limparFormulario();
-          } else {
-              throw ("Houve um erro ao tentar realizar o cadastro!");
-          }
-      }).catch(function (resposta) {
-          console.log(`#ERRO: ${resposta}`);
-      });
-
-      return false;
-  }
-
-</script>
