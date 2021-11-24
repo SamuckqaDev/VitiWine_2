@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,69 +9,58 @@
     <link rel="shortcut icon" href="../img/uva.png" type="image/x-icon">
 
     <title>Dashboard - VitiWine</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
-    <!--Divs do fundo branco-->
-        <div class="pai">
-            <div class="fundo right">
-                <div class="container">
-                         <div class="box-temperatura">
-                            
-                           <h3>Temperatura em tempo real:</h3>
-                            
-                           <img src="./img/temperatura.png" class="img_t">
-                            <span>20 °C</span>
+    <div class="pai">
+        <div class="lateral">
+                <div class="logo">
+                    <img src="./img/logobranco.png"  onclick="document.location.href='../index.html'">
+                </div>
+                <div class="nome-empresa">
+                    <span>Olá empresa</span>
+                </div>
+                <div class="duvida">
+                    <span>Caso tenha dúvidas entre em contato:</span>
+                    <button class="button" onclick="document.location.href='./contato-dash.html'"><span>Contato</span></button>
+                </div>
+                
+        </div>
 
-                            <img src="./img/umidade.png" class="img_u">
-                            <span>18 %</span>
-
-                         </div>
-                         <div class="box-grafico">
-                         <div  style="width:55%;
-                                      position: relative;
-                                      margin-left: 200px;">
-                             <canvas id="teste"></canvas>
-                         </div>
+        <div class="fundo">
+            <div class="container">
+                <div class="grafico">
+                    <div class="cards">
+                        <div class="card">
+                            <h1>00</h1>
+                            <span>Status</span>
+                            <p>Descrição do status</p>
                         </div>
-
-                         <div class="box-status" >
-                          <div>
-                                <img src="./img/indica.png" class="status-img">
-                            </div>
-
-                         <div style="position: relative;
-                                     width: 27%;">
-                             <canvas id="pizza"></canvas>
-                         </div>
+                        <div class="card">
+                            <h1>00</h1>
+                            <span>Status</span>
+                            <p>Descrição do status</p>
                         </div>
-                  </div>
-             </div>
-
-    <!--Divs lateral-->
-
-            <div class="lateral left">
-                <div class="container">
-                 <div class="box-logo">
-                    <img src="./img/logobranco.png" alt="Logo da empresa, formato de uva" onclick="document.location.href='../index.html'">
+                        <div class="card">
+                            <h1>00</h1>
+                            <span>Status</span>
+                            <p>Descrição do status</p>
+                        </div>
                     </div>
-                    <div class="box-empresa">
-                        <h3>Olá! Gui</h3>
-                    </div>
-                    <div class="box-duvida">
-                        <h4>Em caso tenha dúvidas entre em contato</h4>
-                        <button class="button" onclick="document.location.href='./contato-dash.html'"> <span>Contato</span></button>
-                    </div>
-                    <div class="box-clima">
-                        <h4 class="texto-clima">De olho no clima...</h4>
-                        <img src="./img/Sem-titulo-1.jpeg">
+                    <div class="graph">
+                        <canvas id="chartLine" style="width: 100%; height: 100%;"></canvas>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <script src="node_modules/chart.js/dist/chart.js"></script>
     <script src="./js/index.js"></script>
-    
+
 </body>
+
 </html>

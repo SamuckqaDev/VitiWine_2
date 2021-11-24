@@ -1,71 +1,46 @@
-var ctx = document.getElementById('teste').getContext('2d');
-var myChart = new Chart(ctx, {
+var ctxLine = document.getElementById("chartLine").getContext("2d");
+  var rotulosLine = ["07:00", "10:00", "13:00", "16:00", "19:00", "22:00"];
+  var dataLine = [21, 23, 27, 19, 20, 19];
+  var configLine = {
     type: 'line',
     data: {
-        labels: ['Red', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: 'Temperatura',
-            data: [15, 19, 22, 23, 26, 30],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 3
-        }]
+      labels: rotulosLine, // referenciando a variável de rótulos (labels) para o gráfico de linha
+      datasets: [
+        {
+          label: 'Temperatura Diária',
+          data: dataLine, // referenciando a variável de dados para o gráfico de linha
+          backgroundColor: [
+            '#FF000022',
+            '#FFFF0022',
+            '#FF00FF22',
+            '#00FFFF22',
+            '#99009922',
+            '#99990022',
+            '#F0F00022',
+            '#65002222',
+          ],
+          borderColor: [
+            '#FF0000',
+            '#FFFF00',
+            '#FF00FF',
+            '#00FFFF',
+            '#990099',
+            '#999900',
+            '#F0F000',
+            '#650022',
+          ],
+          borderWidth: 1
+        }
+      ]
     },
     options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
+      // por padrão, vem como 'true', e faz com que o gráfico se 'mantenha com o mesmo aspecto de proporção', não ficando responsivo 
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          beginAtZero: true,
         }
+      }
     }
-});
-
-var ctx = document.getElementById('pizza').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: ['boa'],
-        datasets: [{
-            label: 'red',
-            data: [5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 3
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
+  }
+  var ax_chartLine = new Chart(ctxLine, configLine); // criando o gráfico, chamando o new Chart da biblioteca, passando o contexto e as configurações
