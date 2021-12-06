@@ -44,3 +44,4 @@ var ctxLine = document.getElementById("chartLine").getContext("2d");
     }
   }
   var ax_chartLine = new Chart(ctxLine, configLine); // criando o gráfico, chamando o new Chart da biblioteca, passando o contexto e as configurações
+
