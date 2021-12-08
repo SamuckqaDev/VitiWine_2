@@ -34,7 +34,7 @@ function cadastrar(nome_empresa, cnpj, celular, email, senha ) {
     senha
   );
   var instrucao = `
-        INSERT INTO empresa (nome_empresa, cnpj,  celular, email, senha) VALUES ('${nome_empresa}','${cnpj}', '${celular}', '${email}', '${senha}');
+        INSERT INTO Empresa (nomeEmpresa, cnpjEmpresa,  celular, email, senha) VALUES ('${nome_empresa}','${cnpj}', '${celular}', '${email}', '${senha}');
     `;
   console.log("Executando a instrução SQL: \n" + instrucao);
   return database.executar(instrucao);
