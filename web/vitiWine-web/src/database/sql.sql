@@ -1,14 +1,13 @@
 create database vitiwine;
 use vitiwine;
-create table empresa(
-	id_empresa int primary key auto_increment not null,
-	Nome_empresa varchar(20) not null,
-    CNPJ varchar (14) not null,
-    Celular varchar(11) not null,
-    email varchar (45) not null,
-    senha varchar (45) not null,
-    Endereco varchar(45) null
-);
+create table Empresa(
+idEmpresa int primary key auto_increment,
+nomeEmpresa varchar(45),
+cnpjEmpresa varchar(19),  
+celular varchar(11),
+email varchar(45),
+senha varchar(45)
+)auto_increment = 1;
 
 create table Usuario(
 	id_usuario int primary key auto_increment not null,
